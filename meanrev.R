@@ -22,7 +22,7 @@ checkPair <- function(sym1, sym2, dateFilter='::')
 
   # Test cointegration
   ht <- testCoint(sprd)
-  cat("ADF p-value is", as.double(ht$p.value), "\n")
+  cat("PP p-value is", as.double(ht$p.value), "\n")
 
   if (as.double(ht$p.value) < 0.05)
   {
